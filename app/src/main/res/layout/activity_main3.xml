@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<TextView
+    android:gravity="center"
+    android:id="@+id/textview_id"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:text="Fill the below form to calculate bmi"
+    tools:ignore="HardcodedText"
+
+    />
+
+
+        <EditText
+            android:layout_marginVertical="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/weight"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint=" Enter weight (kg)"
+            tools:ignore="HardcodedText"
+            android:inputType="numberDecimal"
+            android:background="@drawable/style"
+            android:autofillHints="1kg"
+            android:paddingHorizontal="8dp"
+            />
+        <EditText
+            android:layout_marginVertical="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/height"
+            android:background="@drawable/style"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:hint=" Enter height (m)"
+            tools:ignore="HardcodedText"
+            android:inputType="numberDecimal"
+            android:autofillHints="1cm"
+            android:paddingHorizontal="8dp"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#DD1111"
+            android:text="Note* : 1 foot equal to 0.3048 m"
+            tools:ignore="HardcodedText"
+            android:textStyle="italic"
+
+            />
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/cal"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:text="Calculate"
+            android:textSize="15sp"
+            android:textColor="#353232"
+            android:background="@drawable/style"
+            android:layout_height="50dp"
+            tools:ignore="HardcodedText"/>
+
+        <FrameLayout
+            android:layout_marginVertical="20dp"
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+
+        </FrameLayout>
+        <Button
+
+            android:id="@+id/buttonnext"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:text="F to F"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            android:textColor="#353232"
+            android:background="@drawable/style"
+            android:layout_height="50dp"
+            tools:ignore="HardcodedText"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
